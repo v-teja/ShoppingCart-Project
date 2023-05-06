@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
   padding: 0;
   margin: 0;
@@ -56,12 +54,9 @@ nav .brand {
 nav .nav-items a {
   margin: 0 1rem;
 }
-
 main {
   display: flex;
-  height: 100vh;
 }
-
 main aside {
   flex: 0.2;
   background-color: black;
@@ -70,56 +65,49 @@ main aside {
   position: fixed;
   padding-top: 1rem;
   width: 11rem;
+  padding-bottom: 80px;
 }
-
 main main-content {
   display: block;
   width: 100%;
   margin-left: 11rem;
 }
-
 aside section {
   padding: 1rem;
   border-bottom: 1px solid white;
+  
 }
-
 aside section:last-child {
   border-bottom: none;
 }
-
 aside section title {
   display: block;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
 aside section li {
   margin-bottom: 0.75rem;
 }
-
 aside section label {
   cursor: pointer;
   margin-left: 0.25rem;
 }
-
 main-content {
   padding: 1rem;
   position: relative;
-}
-
+}    
 main-content input {
   padding: 1rem;
   width: 100%;
   position: relative;
   font-size: 1rem;
 }
-
 main-content .filters {
   display: flex;
+  flex-flow: row wrap;
   margin-top: 1rem;
   gap: 1rem;
 }
-
 main-content .filter {
   flex: 1;
   text-align: center;
@@ -127,47 +115,51 @@ main-content .filter {
   border: 1px solid black;
   cursor: pointer;
 }
-
 main-content .active {
   background-color: black;
   color: white;
 }
-
 main-content section {
   margin-top: 1.2rem;
 }
-
 main-content section title {
   display: block;
   font-size: 1.5rem;
 }
-
 main-content .items {
   display: flex;
-  width: auto;
-  overflow-x: scroll;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
   padding: 1rem 0;
   gap: 1rem;
 }
-
+main-content .items {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+main-content .items .item img {
+  padding: 10px;
+  max-width: 100%;
+  height: 250px;
+}
 main-content .items .item {
   border: 1px solid black;
-  width: 30%;
-}
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-main-content .items .item img {
-  max-width: 100%;
 }
-
 main-content .items .item .row {
   display: flex;
   justify-content: space-between;
 }
-
 main-content .items .item .info {
   padding: 1rem;
 }
-
 main-content .items .item button {
   width: 100%;
   border-radius: none;
@@ -178,7 +170,6 @@ main-content .items .item button {
   background-color: black;
   cursor: pointer;
 }
-
 main-content .items .item .colors {
   display: flex;
   margin: 1rem 0;
